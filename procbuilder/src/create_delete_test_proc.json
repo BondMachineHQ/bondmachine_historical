@@ -1,0 +1,1 @@
+{"Modes":["ha"],"Rsize":8,"R":3,"N":1,"M":1,"L":8,"O":8,"Shared_constraints":"","Op":["nop","rset","inc","dec","i2r","r2o","j","clr","add","chc","chw","cpy","dpc","hlt","je","jz","m2r","r2m","r2s","s2r","saj","wrd","wwr"],"Slocs":[]}

@@ -1,0 +1,39 @@
+#compdef procbuilder
+
+_procbuilder() {
+
+	typeset -A opt_args
+	local context state line curcontext="$curcontext"
+
+	local ret=1
+
+	_arguments -C -A "-*" \
+	'(-input-assembly)'-input-assembly'[Assembly program input]:Assembly Program:_files' \
+	'(-input-binary)'-input-binary'[Binary program input]:Binary Program:_files' \
+	'(-input-random)'-input-random'[Random program input]' \
+	'(-create-verilog-main)'-create-verilog-main'[Filename of verilog main]:Verilog Main:' \
+	'(-create-verilog-processor)'-create-verilog-processor'[Filename of verilog processor]:Verilog Processor:' \
+	'(-create-verilog-rom)'-create-verilog-rom'[Filename of verilog rom]:Verilog ROM:' \
+	'(-create-verilog-testbench)'-create-verilog-testbench'[Filename of verilog testbench]:Verilog Testbench' \
+	'(-load-machine)'-load-machine'[Load a machine from a JSON file]:Machine filename:_files' \
+	'(-save-machine)'-save-machine'[Save a machine to a JSON file]:Machine filename' \
+	'(-d)'-d'[Enable debug]' \
+	'(-v)'-v'[Verbose]' \
+	'(-hex)'-hex'[Use HEX]' \
+	'(-numlines)'-numlines'[Use line numbers]' \
+	'(-inputs)'-inputs'[Number of 8bit inputs 2^]:Inputs:' \
+	'(-oututs)'-outputs'[Number of 8bit outputs 2^]:Outputs:' \
+	'(-ram)'-ram'[Number of 8bit RAM memory cells 2^]:RAM:' \
+	'(-rom)'-rom'[Number of 8bit ROM memory cells 2^]:ROM:' \
+	'(-registers)'-registers'[Number of 8bit Registers 2^]:Registers:' \
+	'(-opcodes)'-opcodes'[List of opcodes]:Opcodes:' \
+	'(-show-program-binary)'-show-program-binary'[Show program binary]' \
+	'(-show-program-dissasembled)'-show-program-disassembled'[Show program disassembled code]' \
+	'(-run-interactions)'-run-interactions'[Run interaction]:Run interaction:' \
+	'(-run)'-run'[Run machine]' \
+	'(-sim-interactions)'-sim-interactions'[Simulation interaction]:Simulation interaction:' \
+	'(-sim)'-sim'[Simulate machine]'
+}
+
+_procbuilder "$@"
+

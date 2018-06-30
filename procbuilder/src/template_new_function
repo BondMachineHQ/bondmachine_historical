@@ -1,0 +1,4 @@
+
+func (op Pippo) Op_instruction_verilog_internal_state(arch *Arch, flavor string) string {
+	return ""
+}

@@ -1,0 +1,45 @@
+clr r0
+r2m r0 0
+clr r0
+r2m r0 1
+clr r0
+r2m r0 2
+rset r0 1
+r2m r0 0
+rset r0 1
+r2m r0 1
+rset r0 0
+r2m r0 2
+m2r r0 0
+m2r r2 1
+wwr r0 ch0
+wrd r1 ch0
+wwr r2 ch1
+wrd r3 ch1
+chc r5 r4
+jz r5 41
+jz r4 27
+dec r4
+jz r4 30
+dec r4
+jz r4 34
+dec r4
+jz r4 37
+rset r4 1
+r2m r4 2
+j 44
+cpy r4 r1
+rset r5 2
+r2m r5 2
+j 44
+rset r5 3
+r2m r5 2
+j 44
+r2m r3 1
+rset r5 4
+r2m r5 2
+j 44
+rset r5 5
+r2m r5 2
+j 44
+j 12

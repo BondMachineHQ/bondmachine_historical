@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+###
+############## TODO  list ##############
+###
+#High	- Support for building the arch from asm
+#High	- float32 arith
+#Med    - make function has to be supported
+#Low    - Include hlt at the end of every routine
+###
+########### Future  features ###########
+###
+#Future - 
+###
+########### Completed  tasks ###########
+###
+#DONE	- inout and outputs via make and other radical ideas in ideas.go ?
+#DONE	- Multiple assignment have to check for conflicts
+#DONE	- Complete the assignment: binary expression
+#DONE	- Complete the assignment: single ident
+#DONE	- Check the multiple return arguments on expression eval
+###
+########## And now the script ##########
+###
+open(MYSELF, "$0"); while (<MYSELF>) { push(@lines,$_) if ($_!~/^###/); } close(MYSELF);open(MYSELF, ">$0"); print MYSELF '#!/usr/bin/perl'."\n###\n############## TODO  list ##############\n###\n";foreach $i(@lines) {print MYSELF $i if($i =~ /^#High/);}foreach $i(@lines) {print MYSELF $i if($i =~ /^#Med/);}foreach $i(@lines) {print MYSELF $i if($i =~ /^#Low/);}print MYSELF "###\n########### Future  features ###########\n###\n";foreach $i(@lines) {print MYSELF $i if($i =~ /^#Future/);}print MYSELF "###\n########### Completed  tasks ###########\n###\n";foreach $i(@lines) {print MYSELF $i if($i =~ /^#DONE/);}print MYSELF "###\n########## And now the script ##########\n###\n";foreach $i(@lines) {print MYSELF $i if($i !~ /^#/);}

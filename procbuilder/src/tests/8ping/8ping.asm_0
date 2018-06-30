@@ -1,0 +1,153 @@
+clr r0
+r2m r0 0
+clr r0
+r2m r0 1
+clr r0
+r2m r0 2
+clr r0
+r2m r0 3
+clr r0
+r2m r0 4
+clr r0
+r2m r0 5
+clr r0
+r2m r0 6
+clr r0
+r2m r0 7
+clr r0
+r2m r0 8
+rset r0 1
+r2m r0 0
+rset r0 1
+r2m r0 1
+rset r0 1
+r2m r0 2
+rset r0 1
+r2m r0 3
+rset r0 1
+r2m r0 4
+rset r0 1
+r2m r0 5
+rset r0 1
+r2m r0 6
+rset r0 1
+r2m r0 7
+rset r0 0
+r2m r0 8
+m2r r0 0
+m2r r2 1
+m2r r4 2
+m2r r6 3
+m2r r8 4
+m2r r10 5
+m2r r12 6
+m2r r14 7
+wwr r0 ch0
+wrd r1 ch0
+wwr r2 ch1
+wrd r3 ch1
+wwr r4 ch2
+wrd r5 ch2
+wwr r6 ch3
+wrd r7 ch3
+wwr r8 ch4
+wrd r9 ch4
+wwr r10 ch5
+wrd r11 ch5
+wwr r12 ch6
+wrd r13 ch6
+wwr r14 ch7
+wrd r15 ch7
+chc r17 r16
+jz r17 149
+jz r16 93
+dec r16
+jz r16 96
+dec r16
+jz r16 100
+dec r16
+jz r16 103
+dec r16
+jz r16 107
+dec r16
+jz r16 110
+dec r16
+jz r16 114
+dec r16
+jz r16 117
+dec r16
+jz r16 121
+dec r16
+jz r16 124
+dec r16
+jz r16 128
+dec r16
+jz r16 131
+dec r16
+jz r16 135
+dec r16
+jz r16 138
+dec r16
+jz r16 142
+dec r16
+jz r16 145
+rset r16 1
+r2m r16 8
+j 152
+r2m r1 0
+rset r16 2
+r2m r16 8
+j 152
+rset r16 3
+r2m r16 8
+j 152
+r2m r3 1
+rset r16 4
+r2m r16 8
+j 152
+rset r16 5
+r2m r16 8
+j 152
+r2m r5 2
+rset r16 6
+r2m r16 8
+j 152
+rset r16 7
+r2m r16 8
+j 152
+r2m r7 3
+rset r16 8
+r2m r16 8
+j 152
+rset r16 9
+r2m r16 8
+j 152
+r2m r9 4
+rset r16 10
+r2m r16 8
+j 152
+rset r16 11
+r2m r16 8
+j 152
+r2m r11 5
+rset r16 12
+r2m r16 8
+j 152
+rset r16 13
+r2m r16 8
+j 152
+r2m r13 6
+rset r16 14
+r2m r16 8
+j 152
+rset r16 15
+r2m r16 8
+j 152
+r2m r15 7
+rset r16 16
+r2m r16 8
+j 152
+rset r16 17
+r2m r16 8
+j 152
+j 36

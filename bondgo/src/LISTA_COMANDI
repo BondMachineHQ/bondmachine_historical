@@ -1,0 +1,5 @@
+Editare nping.py
+
+./nping.py > filedest.go
+go run bondgo_main.go -input-file filedest.go -mpm -save-bondmachine filedest.json -cascading-io
+go run bondmachine_main.go -bondmachine-file filedest.json -create-verilog

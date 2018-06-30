@@ -1,0 +1,7 @@
+clr r0
+clr r1
+rset r2 4
+cpy r0 r2
+cpy r2 r0
+wwr r2 ch0
+chw

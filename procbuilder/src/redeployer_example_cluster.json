@@ -1,0 +1,1 @@
+{"ClusterId":0,"Peers": [{"PeerId":0, "Channels":[], "Inputs": [0,3], "Outputs": [1]}, {"PeerId":1,"Channels":[], "Inputs": [1], "Outputs": [0,3]}, {"PeerId":2, "Channels":[], "Inputs": [0,3], "Outputs": [4]}]}

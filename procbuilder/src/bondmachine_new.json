@@ -1,0 +1,1 @@
+{"Rsize":8,"Domains":[{"Modes":["ha"],"Rsize":8,"R":3,"N":0,"M":0,"L":8,"O":8,"Shared_constraints":"channel:,sharedmem:256","Op":["nop","rset","m2r","r2m","wwr","wrd","chw","chc","s2r","r2s"],"Slocs":[]}],"Processors":[0,0],"Inputs":0,"Outputs":0,"Internal_inputs":null,"Internal_outputs":null,"Links":null,"Shared_objects":["channel:","sharedmem:256"],"Shared_links":[[0,1],[0,1]]}

@@ -1,0 +1,18 @@
+#compdef bondmachine
+
+_bondmachine() {
+
+	typeset -A opt_args
+	local context state line curcontext="$curcontext"
+
+	local ret=1
+
+	_arguments -C -A "-*" \
+	'(-d)'-d'[Enable debug]' \
+	'(-v)'-v'[Verbose]' \
+	'(-sim-interactions)'-sim-interactions'[Simulation interaction]:Simulation interaction:' \
+	'(-sim)'-sim'[Simulate machine]'
+}
+
+_bondmachine "$@"
+
