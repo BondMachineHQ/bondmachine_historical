@@ -23,5 +23,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Reference
 
-Project website: http://bondmachine.fisica.unipg.it
+Project website: https://www.bondmachine.it
+
+This repo is contains the historical code of the project. The new code is hosted within the BondMachineHQ organization
 
